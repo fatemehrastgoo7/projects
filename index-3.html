@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<title>ثبت نام دانشجو  </title>
+ <style type="text/css">
+@font-face {
+ font-family: 'b yekan';
+ src: local('web yekan'),
+ url('font/webyekan.eot?#') format('eot'),
+ url('font/webyekan.woff') format('woff'),
+ url('font/webyekan.ttf') format('truetype');
+}
+body{direction:rtl;}
+.navbar{width:1007px;height:50px;margin:0;padding:0;font:13px 'b yekan',Tahoma,Arial;line-height:50px;
+background-image:-o-linear-gradient(top,#08435d,#21759a);
+background-image:-moz-linear-gradient(top,#08435d,#21759a);
+background-image:-webkit-linear-gradient(top,#08435d,#21759a);
+background-image:-ms-linear-gradient(top,#08435d,#21759a);
+background-image:linear-gradient(to top,#08435d,#21759a)
+}
+.navbar li:hover{background:url(img/arrow.png) center bottom no-repeat;}
+.navbar li a:link,.navbar li a:visited,.navbar li a:hover,.navbar li a:active{text-decoration:none;color:#FFF;padding:14px 10px}
+.navbar li ul li a:link,.navbar li ul li a:visited,.navbar li ul li a:hover,.navbar li ul li a:active{text-decoration:none;color:#FFF}
+.navbar li{display:inline-block;}
+.navbar li ul{position:absolute;opacity:0;visibility:hidden;padding:3px 7px;background-color:#165f7f;border-radius:8px;box-shadow:inset 0 0 10px #124e68;line-height:normal;border:1px solid #FFF;transition:all .2s linear;-o-transition:all .2s linear;-ms-transition:all .2s linear;-moz-transition:all .2s linear;-webkit-transition:all .2s linear
+}
+.navbar li ul li{display:block}
+.navbar li ul li:hover{background:none}
+.navbar li ul li a:link,.navbar li ul li a:visited{width:100%;float:right;padding:3px 0 8px;color:#fff;background:url(img/line.png) center bottom repeat-x}
+.navbar li ul li a:hover,.navbar li ul li a:active{color:#2191c2;background-image:url(img/line2.png);background-color:rgba(255,255,255,.02)}
+.navbar li ul li:last-child a{background-image:none}
+.navbar li:hover ul{opacity:1;visibility:visible}
+}
+ .footer
+{
+background-color:pink;
+}
+
+.navigations
+{
+background-color:blue;
+height:300px;
+width:200px;
+left:20px;
+margin-top:50px;
+}
+
+.content
+{
+position:absolute;
+text-align:center;
+overflow:auto;
+min-height:300px;
+max-height:500px;
+padding:10px;
+top:50px;
+right:20px;
+left:240px;
+background-color:grey;
+
+
+}
+
+.footer
+{
+position:absolute;
+background-color:red;
+text-align:center;
+right:20px;
+left:240px;
+height:20px;
+margin-top:20px;
+}
+</style>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+</head>
+<body>
+<center>
+   <ul class="navbar">
+    <li><a href="index3.html">صفحه نخست</a></li>
+    <li><a href="index-2.html">برگشت به سرپرستي</a></li>
+    <li><a href="index.html">خروج</a></li>
+</ul>
+</center>
+     <form action="" class="register">
+            <h1>ثبت نام</h1>
+            <fieldset class="row1">
+                <legend>اطلاعات دانشجويي
+                </legend>
+                <p>
+                    <label>نام  *
+                    </label>
+                    <input type="text"/>
+                    <label>نام خانوادگي  *
+                    </label>
+                    <input type="text"/>
+                </p>
+                <p>
+
+                    <label>شماره دانشجويي*
+                    </label>
+                    <input type="text"/>
+                    <label>شماره ملي  *
+                    </label>
+                    <input type="text"/>
+                </p>
+                 <p>
+                   <label>رشته تحصيلي *
+                    </label>
+                    <select>
+                        <option> انتخاب...
+                        </option>
+                        <option value="1">حسابداري
+                        </option>
+                        <option value="2">عمران
+                        </option>
+                        <option value="3">کامپيوتر
+                        </option>
+                        <option value="4">مکانيک
+                        </option>
+                    </select>
+                    <label>سال ورود*
+                    </label>
+                    <input type="text"/>
+                </p>
+            </fieldset>
+            <fieldset class="row2">
+                <legend>آدرس محل سکونت
+                </legend>
+                <p>
+                <label>خارج استان *
+                    </label>
+                    <select>
+                        <option value="0"> نه
+                        </option>
+                        <option value="1">بلي
+                        </option>
+                    </select>
+                </p>
+                <p>
+                    <label class="optional">استان محل تولد
+                    </label>
+                    <input type="text" class="long"/>
+                </p>
+                <p>
+                    <label>شهر *
+                    </label>
+                    <input type="text" class="long"/>
+                </p>
+                <p>
+                  <label>آدرس *
+                    </label>
+                    <input type="text" class="long"/>
+                </p>
+                <p>
+                    <label>کد پستي
+                    </label>
+                    <input type="text" maxlength="10"/>
+                </p>
+                <p>
+                  <label>تلفن ثابت *
+                    </label>
+                    <input type="text" maxlength="10"/>
+                </p>
+                <p>
+                    <label>تلفن همراه *
+                    </label>
+                    <input type="text" maxlength="10"/>
+                </p>
+                <p>
+            </fieldset>
+            <fieldset class="row3">
+                <legend>اطلاعات شخصي
+                </legend>
+                <p>
+                    <label>جنسيت *</label>
+                    <input type="radio" value="radio"/>
+                    <label class="gender">مرد </label>
+                    <input type="radio" value="radio"/>
+                    <label class="gender">زن </label>
+                </p>
+                <p>
+                    <label>تاريخ تولد *
+                    </label>
+                    <select class="date">
+                        <option value="1">01
+                        </option>
+                        <option value="2">02
+                        </option>
+                        <option value="3">03
+                        </option>
+                        <option value="4">04
+                        </option>
+                        <option value="5">05
+                        </option>
+                        <option value="6">06
+                        </option>
+                        <option value="7">07
+                        </option>
+                        <option value="8">08
+                        </option>
+                        <option value="9">09
+                        </option>
+                        <option value="10">10
+                        </option>
+                        <option value="11">11
+                        </option>
+                        <option value="12">12
+                        </option>
+                        <option value="13">13
+                        </option>
+                        <option value="14">14
+                        </option>
+                        <option value="15">15
+                        </option>
+                        <option value="16">16
+                        </option>
+                        <option value="17">17
+                        </option>
+                        <option value="18">18
+                        </option>
+                        <option value="19">19
+                        </option>
+                        <option value="20">20
+                        </option>
+                        <option value="21">21
+                        </option>
+                        <option value="22">22
+                        </option>
+                        <option value="23">23
+                        </option>
+                        <option value="24">24
+                        </option>
+                        <option value="25">25
+                        </option>
+                        <option value="26">26
+                        </option>
+                        <option value="27">27
+                        </option>
+                        <option value="28">28
+                        </option>
+                        <option value="29">29
+                        </option>
+                        <option value="30">30
+                        </option>
+                        <option value="31">31
+                        </option>
+                    </select>
+                    <select>
+                        <option value="1">فروردين
+                        </option>
+                        <option value="2">ارديبهشت
+                        </option>
+                        <option value="3">خرداد
+                        </option>
+                        <option value="4">تير
+                        </option>
+                        <option value="5">مرداد
+                        </option>
+                        <option value="6">شهريور
+                        </option>
+                        <option value="7">مهر
+                        </option>
+                        <option value="8">آبان
+                        </option>
+                        <option value="9">آذر
+                        </option>
+                        <option value="10">دي
+                        </option>
+                        <option value="11">بهمن
+                        </option>
+                        <option value="12">اسفند
+                        </option>
+                    </select>
+                    <input class="year" type="text" size="4" maxlength="4"/>< مانند 1370
+                </p>
+                <p>
+                   <label>وضعيت تاهل *
+                    </label>
+                    <select>
+                        <option> انتخاب...
+                        </option>
+                        <option value="1">متاهل
+                        </option>
+                        <option value="2">مجرد
+                        </option>
+                    </select>
+                </p>
+                <form enctype="multipart/form-data" action="uploader.php" method="post" >
+<input name="MAX_FILE_SIZE" value="100000" type="hidden" />
+</p>عکس:</label>
+<input type="file" name="UploadedFile" />
+<input type="submit" value="آپلود" />
+            </fieldset>
+            <fieldset class="row4">
+                <legend>اطلاعات خوابگاهي
+                </legend>
+                                </p>
+                                    <label>متقاضي خوابگاه *
+                    </label>
+                    <select>
+                        <option>
+                        </option>
+                        <option value="1">مي باشد
+                        </option>
+                        <option value="2">نـــمي باشد
+                        </option>
+                    </select>
+                    <label>نام اتاق *
+                    </label>
+                    <select>
+                        <option>
+                        </option>
+                        <option value="1">اتاق شماره1
+                        </option>
+                        <option value="2">اتاق شماره 2
+                        </option>
+                    </select>
+
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>*  اطلاعات مورد تاييد است </label>
+            </fieldset>
+                 </p>
+            <div><button class="button"> انصراف</button></div>
+           </label>
+            <div><button class="button">ويرايش</button></div>
+           </label>
+            <div><button class="button">ثب نام  </button></div>
+<body background="100.jpg">
+</body>
+</html>
